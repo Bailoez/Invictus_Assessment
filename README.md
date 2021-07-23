@@ -15,12 +15,12 @@ Nick Bailey Invictus Alpha Graduate Program Quantitative Assessment
 
 # Run/Build program
 Libraries required to run:
-pandas
-requests
-matplotlib
-plotly
-cbpro
-json
+pandas,
+requests,
+matplotlib,
+plotly,
+cbpro,
+json,
 # Question 2.1
 
 Open file named "Question 2.1", download & run question2.1.py
@@ -31,7 +31,7 @@ Instructions specified in beginning of code.
 
 Open file named "Question 3", download & run question3.py
 
-The program pulls one years worth of historical data for BTC/USD, BTC-PERP, ETH/USD, ETH_PERP using FTX the API. The data in json format is then inputted into pandas data frame and the results in csv format are printed to the terminal. A candlestick graph is drawn to verify data and timeframe are correct as well as 20w SMA. The program then defines functions which generate the sharpe, sortino and information ratios as well as the downside risk and tracking error. These functions are called and outputs printed in the terminal. Tracking error and information ratio functions returned Nan and could not be interpreted as expected.
+The program pulls one years worth of historical data for BTC/USD, BTC-PERP, ETH/USD, ETH_PERP using FTX the API. The data in json format is then inputted into pandas data frame and the results in csv format are printed to the terminal. A candlestick graph is drawn to verify data and timeframe are correct as well as 20w SMA (see png images in Question 3). The program then defines functions which generate the sharpe, sortino and information ratios as well as the downside risk and tracking error. These functions are called and outputs printed in the terminal. Tracking error and information ratio functions returned Nan and could not be interpreted as expected.
 
 # Question 3.1
 
@@ -42,6 +42,6 @@ The sortino ratio is a subset of the sharpe ratio (both measure the risk – adj
 
 Open file named "Question 4", download & run question4.py
 
-The program uses the cbpro library in conjunction with the constants.py file to place a BTC limit order.  First an authentication is created in main() which uses an API url (sandbox in coinbase pro). An initializer is created for tradingSystems and the program continues to define main functions that will be required. Main functions include: Execute trade action (buy or sell), view coinbase account, view order id and obtain current price of bitcoin.
+The program uses the cbpro library in conjunction with the constants.py file using a simple strategy to place a BTC limit order.The program first an authentication is created in main() which uses an API url (with sandbox coinbase pro). An initializer is created for tradingSystems and the program continues to define main functions that will be required. Main functions include: Execute trade action (buy or sell), view coinbase account, view order id and obtain current price of bitcoin for reference. Buy and sell orders were recorded and stored in text file labelled order.txt.
 
 
