@@ -23,13 +23,13 @@ cbpro,
 json,
 # Question 2.1
 
-Open file named "Question 2.1", download & run question2.1.py
-Instructions specified in beginning of code.
+Open file named "Question2", download & run question2.1.py
+Instructions specified in beginning of code. The code attempts to take the current allocation fraction & subract the new allocation fraction and determine if allocation is required for that entry. The program then attempts to allocate the difference in fractions to the entries that require more fraction allocation (those entries < 1). Then it attempts match the leftover allocatable for each entry and allocate that to the entires that require allocation. The program does not have full functionality and end points/conditions are still required as well as checking valid inputs.
 
 
 # Question 3 - analysis
 
-Open file named "Question 3", download & run question3.py
+Open file named "Question3", download & run question3.py
 
 The program pulls one years worth of historical data for BTC/USD, BTC-PERP, ETH/USD, ETH_PERP using FTX the API. The data in json format is then inputted into pandas data frame and the results in csv format are printed to the terminal. A candlestick graph is drawn to verify data and timeframe are correct as well as 20w SMA (see png images in Question 3). The program then defines functions which generate the sharpe, sortino and information ratios as well as the downside risk and tracking error. These functions are called and outputs printed in the terminal. Tracking error and information ratio functions returned Nan and could not be interpreted as expected.
 
