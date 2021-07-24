@@ -20,7 +20,7 @@ requests,
 matplotlib,
 plotly,
 cbpro,
-json,
+json
 # Question 2.1
 
 Open file named "Question2", download & run question2.1.py
